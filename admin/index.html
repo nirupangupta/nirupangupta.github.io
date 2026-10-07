@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nirupan Gupta — Portfolio Admin</title>
+<link rel="stylesheet" href="admin.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="../supabase-config.js"></script><script src="../content-default.js"></script>
+</head>
+<body>
+<div id="loginView" class="auth-shell">
+  <div class="auth-card"><div class="brand">NG<span>.</span> / Admin</div><h1>Portfolio Admin</h1><p>Private content management for Nirupan Gupta's portfolio.</p>
+  <form id="loginForm"><label>Email<input id="email" type="email" required autocomplete="username"></label><label>Password<input id="password" type="password" required autocomplete="current-password"></label><button class="btn primary" type="submit">Sign in</button><button id="forgotBtn" class="text-btn" type="button">Forgot password?</button><div id="authMsg" class="msg"></div></form></div>
+</div>
+<div id="appView" hidden>
+<header class="admin-top"><div><div class="brand">NG<span>.</span> / Admin</div><small>Portfolio CMS</small></div><div class="top-actions"><a href="../" target="_blank">View site ↗</a><button id="logoutBtn">Log out</button></div></header>
+<div class="admin-layout">
+<aside class="sidebar"><button data-tab="content" class="tab active">Content</button><button data-tab="projects" class="tab">Projects</button><button data-tab="career" class="tab">Career & promotions</button><button data-tab="assets" class="tab">Resumes & images</button><button data-tab="history" class="tab">Version history</button></aside>
+<main class="editor">
+<div class="editor-head"><div><div class="eyebrow">Admin workspace</div><h1>Edit your portfolio</h1><p>Changes are saved as drafts first. Publish only when the preview looks right.</p></div><div class="publish-actions"><button id="saveDraft" class="btn">Save draft</button><button id="previewBtn" class="btn">Preview draft</button><button id="publishBtn" class="btn primary">Publish</button></div></div>
+<div id="globalMsg" class="msg"></div>
+<section id="tab-content" class="tab-panel active"></section>
+<section id="tab-projects" class="tab-panel"></section>
+<section id="tab-career" class="tab-panel"></section>
+<section id="tab-assets" class="tab-panel"></section>
+<section id="tab-history" class="tab-panel"></section>
+</main></div></div>
+<script src="admin.js"></script>
+</body></html>

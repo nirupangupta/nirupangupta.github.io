@@ -1,0 +1,19 @@
+{
+  "version": "redesign-2026-10-07",
+  "site": "Nirupan Gupta Portfolio",
+  "pages": [
+    "index.html",
+    "case-studies/tech-talks.html",
+    "case-studies/earn-with-lenovo.html",
+    "case-studies/ralvie-ai.html"
+  ],
+  "metrics": {
+    "accounts_career": "27+",
+    "bsharp_accounts": 9,
+    "users_retailers": "4,000+",
+    "leads_month": "200+",
+    "demos_month": "20+",
+    "avg_deal": "₹1L",
+    "annual_target": "₹50L"
+  }
+}
